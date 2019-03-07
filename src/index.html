@@ -91,8 +91,9 @@
             <!--aboutMe-->
             <section>
                 <h2 class="title">关于我</h2>
-                <p class="content">近期在网上找了资料自学前端知识半年。熟悉HTML、CSS、Javascript</p>
+                <p class="content">熟悉HTML、CSS、Javascript、Jquery、SCSS,能独立开发web页面，使用的前端框架是React。</p>
             </section>
+
             <!--教育经历-->
             <section class="education">
                 <h2 class="title">教育经历</h2>
@@ -113,6 +114,93 @@
                 </div>
             </section>
 
+            <!--项目经历-->
+            <section class="project">
+                <h2 class="title">项目经历</h2>
+
+                <!--键盘形网页导航-->
+                <div class="project-content">
+                    <h3>键盘形网页导航</h3>
+                    <ul>
+                        <li>关键词: 原生JavaScript、CSS3、事件监听、localStorage</li>
+                        <li>描述: 使用原生JS和CSS3制作键盘式的网页导航栏，每个键位中包含导航页的icon，
+                            监听键盘事件，当按下某个按键后，到达对应的导航页面。鼠标可以编辑按键导航页面，
+                            同时将所有导航页面的数据存在一个hash中，并存到localStorage。
+                        </li>
+                        <li>预览项目:<a target="_blank" href="https://jasonshuyue.github.io/nav-demo/index.html">点击这里</a></li>
+                        <img class="productions" src="./img/productions/nav-demo.png" alt="nav-demo">
+                    </ul>
+                </div>
+
+                <!--Canvas画板-->
+                <div class="project-content">
+                    <h3>Canvas画板</h3>
+                    <ul>
+                        <li>关键词: 原生JavaScript、Canvas、响应式、jQuery</li>
+                        <li>描述: 该项目使用原生JS实现，主要调用 Canvas API，实现了划线、调色、橡皮擦、保存等功能。</li>
+                        <li>预览项目:<a target="_blank" href="https://jasonshuyue.github.io/canvas-demo/index.html">点击这里</a></li>
+                        <img class="productions canvas-production" src="./img/productions/canvas-demo.png" alt="canvas-demo">
+
+                    </ul>
+                </div>
+
+                <!--画一个卡通人物-->
+                <div class="project-content">
+                    <h3>画一个卡通人物</h3>
+                    <ul>
+                        <li>关键词: 原生JavaScript、CSS3</li>
+                        <li>描述: 用动画模拟皮卡丘CSS绘制过程,动画效果原理是通过js定时网页书写CSS字符串+CSS3过渡效果实现,弯曲线条主要是用CSS3圆角精确控制实现.</li>
+                        <li>预览项目:<a target="_blank" href="https://jasonshuyue.github.io/Doreamon-MVC/">点击这里</a></li>
+                        <img class="qrCode " src="./img/qrCode/doraemon-qrcode.png" alt="doraemon">
+                        <img class="productions doraemon-production" src="./img/productions/doraemon-demo.png" alt="doraemon-demo">
+                    </ul>
+                </div>
+
+
+
+                <!--TodoList-->
+                <div class="project-content">
+                    <h3>待办事项</h3>
+                    <ul>
+                        <li>关键词: React，SCSS，leanCloud</li>
+                        <li>描述: 该项目使用React实现了一个TodoList工具，借助第三方leanCloud完成登录/注册功能，该工具可以添加todo，删除todo，修改todo，标记已完成todo。</li>
+                        <li>预览项目:<a target="_blank" href="https://jasonshuyue.github.io/TodoList-demo-1/build/">点击这里</a></li>
+                        <img class="productions todolist-production" src="./img/productions/todolist.png" alt="todolist">
+                    </ul>
+                </div>
+
+                <!--基于Express的在线便利贴-->
+                <div class="project-content">
+                    <h3>基于Express的在线便利贴</h3>
+                    <ul>
+                        <li>关键词: 原生JS、Jquery、Express、Sequlize、模块化、SCSS</li>
+                        <li>
+                            描述: 基于Express框架制作了一个在线便利贴的功能，使用passport-github进行登录操作，同时使用Sequlize包来当做数据库记录信息。
+                            用户在登录前，可以看到所有用户留下的便利贴，但是不能进行操作（添加新标签、修改标签、删除标签），登陆后可以查看自己的便利贴，使用Jquery和原生JS完成便利贴的瀑布流效果。
+                        </li>
+                        <li>预览项目:<a target="_blank" href="http://www.shuyuenote.top/">点击这里</a></li>
+                        <img class="productions" src="./img/productions/sticky-note.png" alt="sticky-note">
+                    </ul>
+                </div>
+
+                <!--仿网易云音乐-->
+                <div class="project-content">
+                    <h3>仿网易云音乐</h3>
+                    <ul>
+                        <li>关键词: 原生JavaScript、CSS3，MVC模式、eventHub、leanCloud、七牛</li>
+                        <li>
+                            描述: 使用原生JS和CSS仿制网易云音乐，制作了一个后台管理页面，将歌曲上传到七牛，获取外链，然后存入leanCloud，运用MVC模块化思想编程，
+                            同时创建了一个eventHub信息中心来控制操作流程。
+                        </li>
+                        <li>预览项目:<a target="_blank" href="https://jasonshuyue.github.io/cloud-music-1/src/index.html">点击这里</a></li>
+                        <img class="qrCode cloud-qrcode" src="./img/qrCode/cloud-qrcode.png" alt="cloud">
+                        <img class="productions cloud-production" src="./img/productions/cloud-music-demo.png" alt="cloud-music-demo">
+                    </ul>
+                </div>
+
+
+            </section>
+
             <!--专业技能-->
             <section class="professional-skills">
                 <h2 class="title">专业技能</h2>
@@ -124,7 +212,7 @@
                             <h3>命令行</h3>
                             <ul class="skills-level-2">
                                 <li class="items-2">了解linux命令行的基本操作</li>
-                                <li class="items-2">掌握GitHub的基本用法，可以用GitHub进行版本控制</li>
+                                <li class="items-2">熟悉GitHub的基本用法</li>
                             </ul>
                         </li>
 
@@ -141,7 +229,7 @@
                         <li class="items-1">
                             <h3>HTML5&CSS3</h3>
                             <ul class="skills-level-2">
-                                <li class="items-2">HTML5:熟悉语义化标签，了解Canvas、SVG</li>
+                                <li class="items-2">HTML5:熟悉语义化标签，了解Canvas</li>
                                 <li class="items-2">CSS3:理解文档流、盒模型，掌握CSS3渐变、阴影、过渡、2D3D转换、动画的使用</li>
                                 <li class="items-2">布局:掌握网页常用传统布局、flex 布局，掌握元素定位与居中的方法</li>
                                 <li class="items-2">能够完成界面整洁、交互友好的网页，高度还原 UI 视觉稿</li>
@@ -156,7 +244,7 @@
                                 <li class="items-2">理解面相对象、原型链、new、this、继承、作用域链、闭包、立即执行函数的概念，并能在实际编码中运用</li>
                                 <li class="items-2">了解回调函数、异步的概念，了解Promise异步操作</li>
                                 <li class="items-2">jQuery:了解jQuery封装原理，能够使用 jQuery 进行 DOM 操作、轮播、动画、制作特效等</li>
-                                <li class="items-2">了解MVC思想、传统模块化方法、NPM。会简单配置webpack3中babel-loader等</li>
+                                <li class="items-2">了解MVC思想，会简单配置webpack3中babel-loader等</li>
                             </ul>
                         </li>
 
@@ -193,75 +281,24 @@
                 </div>
             </section>
 
-            <!--项目经历-->
-            <section class="project">
-                <h2 class="title">项目经历</h2>
-
-                <!--键盘形网页导航-->
-                <div class="project-content">
-                    <h3>键盘形网页导航</h3>
-                    <ul>
-                        <li>关键词: 原生JavaScript、CSS3、事件监听、localStorage</li>
-                        <li>描述: 使用原生JS和CSS3制作键盘式的网页导航栏，每个键位中包含导航页的icon，
-                            监听键盘事件，当按下某个按键后，到达对应的导航页面。鼠标可以编辑按键导航页面，
-                            同时将所有导航页面的数据存在一个hash中，并存到localStorage。
-                        </li>
-                        <li>预览项目:<a target="_blank" href="https://jasonshuyue.github.io/nav-demo/index.html">点击这里</a></li>
-                    </ul>
-                </div>
-
-                <!--Canvas画板-->
-                <div class="project-content">
-                    <h3>Canvas画板</h3>
-                    <ul>
-                        <li>关键词: 原生JavaScript、Canvas、响应式、jQuery</li>
-                        <li>描述: 该项目使用原生JS实现，主要调用 Canvas API，实现了划线、调色、橡皮擦、保存等功能。用 XXX 实现了 XXX 功能，用 XXX 实现了 XXX 功能。</li>
-                        <li>预览项目:<a target="_blank" href="https://jasonshuyue.github.io/canvas-demo/index.html">点击这里</a></li>
-
-                    </ul>
-                </div>
-
-                <!--画一个卡通人物-->
-                <div class="project-content">
-                    <h3>画一个卡通人物</h3>
-                    <ul>
-                        <li>关键词: 原生JavaScript、CSS3</li>
-                        <li>描述: 用动画模拟皮卡丘CSS绘制过程,动画效果原理是通过js定时网页书写CSS字符串+CSS3过渡效果实现,弯曲线条主要是用CSS3圆角精确控制实现.</li>
-                        <li>预览项目:<a target="_blank" href="https://jasonshuyue.github.io/Doreamon-MVC/">点击这里</a></li>
-                    </ul>
-                </div>
-
-                <!--仿网易云音乐-->
-                <div class="project-content">
-                    <h3>仿网易云音乐</h3>
-                    <ul>
-                        <li>关键词: 原生JavaScript、CSS3，MVC模式，eventHub，Jquery</li>
-                        <li>描述: 用动画模拟皮卡丘CSS绘制过程,动画效果原理是通过js定时网页书写CSS字符串+CSS3过渡效果实现,弯曲线条主要是用CSS3圆角精确控制实现.</li>
-                        <li>预览项目:<a target="_blank" href="https://jasonshuyue.github.io/Doreamon-MVC/">点击这里</a></li>
-                    </ul>
-                </div>
-
-
-            </section>
-
             <!--个人技术专栏-->
             <section class="personal-page">
                 <h2 class="title">个人技术专栏</h2>
                 <ul class="page-wrapper">
                     <li class="page-item blog">
                         <p class="page-item-title">个人博客<a target="_blank" href="https://www.jianshu.com/u/a210faa26a9b">(链接)</a></p>
-                        <img src="./img/blog-qrcode.png" alt="blog">
+                        <img class="qrCode blog-qrCode" src="./img/qrCode/blog-qrcode.png" alt="blog">
                     </li>
                     <li class="page-item github">
                         <p class="page-item-title">Github<a target="_blank" href="https://github.com/JasonShuYue">(链接)</a></p>
-                        <img src="./img/github-qrcode.png" alt="github">
-                    s</li>
+                        <img class="qrCode github-qrCode" src="./img/qrCode/github-qrcode.png" alt="github">
+                    </li>
                 </ul>
             </section>
         </main>
     </div>
 
     <script src="//at.alicdn.com/t/font_954249_6t2hxozw3qa.js"></script>
-    <script src="../main.js"></script>
+    <script src="../dist/main.js"></script>
 </body>
 </html>

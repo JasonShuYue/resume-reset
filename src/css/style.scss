@@ -10,6 +10,11 @@ $black: #3c3c3c;
   display: flex;
   flex-wrap: wrap;
   background: $white;
+  overflow: hidden;
+  .qrCode {
+    width: 100px;
+    display: block;
+  }
   header {
     width: 100%;
     background: $black;
@@ -129,7 +134,7 @@ $black: #3c3c3c;
         margin: 12px 0;
       }
       .contentOne, .contentTwo, .project-content {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
         h3 {
           font-size: 16px;
         }
@@ -144,6 +149,14 @@ $black: #3c3c3c;
       .project-content {
         a:active, a:visited {
           color: black;
+        }
+        .productions {
+          width: 90%;
+          display: block;
+          margin-top: 5px;
+          &.cloud-production{
+            width: 300px;
+          }
         }
       }
     }
@@ -174,14 +187,15 @@ $black: #3c3c3c;
       .page-wrapper {
         list-style: unset;
         padding-left: 20px;
+        display: flex;
         .page-item {
           font-size: 16px;
           padding-bottom: 10px;
+          &.github {
+            margin-left: 50px;
+          }
           .page-item-title {
             padding-bottom: 10px;
-          }
-          img {
-            width: 100px;
           }
         }
       }
@@ -195,6 +209,7 @@ $black: #3c3c3c;
     aside {
       width: 100%;
       padding-top: 50px;
+      min-height: 0;
       .avator {
         position: static;
         margin: 0 auto;
@@ -208,7 +223,7 @@ $black: #3c3c3c;
 
 @media print {
   body {
-    background: blue;
+    background: white;
   }
   .wrapper {
     max-width: 900px;
@@ -309,8 +324,34 @@ $black: #3c3c3c;
 
     }
     main {
-      width: calc(100% - 240px);
-      flex: 1;
+      section {
+        &.education {
+          .contentOne {
+            ul {
+              display: flex;
+              flex-direction: column;
+              //li {
+              //  margin: 2px 0;
+              //  background: red;
+              //}
+            }
+          }
+        }
+        .project-content {
+          .canvas-production {
+            margin-top: 50px;
+          }
+          .todolist-production {
+            margin-bottom: 100px;
+          }
+          .cloud-qrcode {
+            display: inline-block;
+          }
+          .cloud-production {
+            display: inline-block;
+          }
+        }
+      }
     }
   }
 }
