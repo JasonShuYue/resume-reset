@@ -87,10 +87,13 @@
 
         </aside>
         <main>
+
+            <!--aboutMe-->
             <section>
                 <h2 class="title">关于我</h2>
-                <p class="content">曾在「理工数传」公司实习近1年，近期在网上找了资料自学前端知识4个月。熟悉HTML、CSS、Javascript</p>
+                <p class="content">近期在网上找了资料自学前端知识半年。熟悉HTML、CSS、Javascript</p>
             </section>
+            <!--教育经历-->
             <section class="education">
                 <h2 class="title">教育经历</h2>
                 <div class="contentOne">
@@ -109,17 +112,151 @@
                     </ul>
                 </div>
             </section>
+
+            <!--专业技能-->
+            <section class="professional-skills">
+                <h2 class="title">专业技能</h2>
+                <div class="skills-content">
+                    <ul class="skills-level-1">
+
+                        <!--命令行-->
+                        <li class="items-1">
+                            <h3>命令行</h3>
+                            <ul class="skills-level-2">
+                                <li class="items-2">了解linux命令行的基本操作</li>
+                                <li class="items-2">掌握GitHub的基本用法，可以用GitHub进行版本控制</li>
+                            </ul>
+                        </li>
+
+                        <!--HTTP-->
+                        <li class="items-1">
+                            <h3>HTTP</h3>
+                            <ul class="skills-level-2">
+                                <li class="items-2">熟悉客户端/服务器模型，HTTP请求与相应。了解常见状态码含义</li>
+                                <li class="items-2">HTTP缓存:掌握Cache-Control、Expires 、ETag的应用</li>
+                            </ul>
+                        </li>
+
+                        <!--HTML5&CSS3-->
+                        <li class="items-1">
+                            <h3>HTML5&CSS3</h3>
+                            <ul class="skills-level-2">
+                                <li class="items-2">HTML5:熟悉语义化标签，了解Canvas、SVG</li>
+                                <li class="items-2">CSS3:理解文档流、盒模型，掌握CSS3渐变、阴影、过渡、2D3D转换、动画的使用</li>
+                                <li class="items-2">布局:掌握网页常用传统布局、flex 布局，掌握元素定位与居中的方法</li>
+                                <li class="items-2">能够完成界面整洁、交互友好的网页，高度还原 UI 视觉稿</li>
+                            </ul>
+                        </li>
+
+                        <!--Javascript-->
+                        <li class="items-1">
+                            <h3>Javascript</h3>
+                            <ul class="skills-level-2">
+                                <li class="items-2">熟悉JS数据类型、语法、内置全局对象的基本API。掌握操作DOM的基本API</li>
+                                <li class="items-2">理解面相对象、原型链、new、this、继承、作用域链、闭包、立即执行函数的概念，并能在实际编码中运用</li>
+                                <li class="items-2">了解回调函数、异步的概念，了解Promise异步操作</li>
+                                <li class="items-2">jQuery:了解jQuery封装原理，能够使用 jQuery 进行 DOM 操作、轮播、动画、制作特效等</li>
+                                <li class="items-2">了解MVC思想、传统模块化方法、NPM。会简单配置webpack3中babel-loader等</li>
+                            </ul>
+                        </li>
+
+                        <!--Browser-->
+                        <li class="items-1">
+                            <h3>Browser</h3>
+                            <ul class="skills-level-2">
+                                <li class="items-2">事件机制:理解事件注册队列、捕获、冒泡、事件委托</li>
+                                <li class="items-2">跨域:会使用jsonp、Ajax发送HTTP请求，理解浏览器同源策略和CORS跨域</li>
+                                <li class="items-2">web端存储:理解Cookie、Session，掌握LocalStorage、SessionStorage的应用</li>
+                                <li class="items-2">web安全:了解CSRF攻击、XSS攻击以及防御方法</li>
+                            </ul>
+                        </li>
+
+                        <!--移动端&响应式开发-->
+                        <li class="items-1">
+                            <h3>移动端&响应式开发</h3>
+                            <ul class="skills-level-2">
+                                <li class="items-2">PC端会使用meta标签以及媒体查询达到响应式效果</li>
+                                <li class="items-2">移动端理解并使用动态 REM、vw/vh 、flex布局等书写手机端页面，精确还原设计稿</li>
+                            </ul>
+                        </li>
+
+                        <!--其他技能-->
+                        <li class="items-1">
+                            <h3>其他技能</h3>
+                            <ul class="skills-level-2">
+                                <li class="items-2">了解PhotoShop的基本使用</li>
+                                <li class="items-2">掌握Office办公软件，PPT基本制作</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <!--项目经历-->
             <section class="project">
                 <h2 class="title">项目经历</h2>
+
+                <!--键盘形网页导航-->
+                <div class="project-content">
+                    <h3>键盘形网页导航</h3>
+                    <ul>
+                        <li>关键词: 原生JavaScript、CSS3、事件监听、localStorage</li>
+                        <li>描述: 使用原生JS和CSS3制作键盘式的网页导航栏，每个键位中包含导航页的icon，
+                            监听键盘事件，当按下某个按键后，到达对应的导航页面。鼠标可以编辑按键导航页面，
+                            同时将所有导航页面的数据存在一个hash中，并存到localStorage。
+                        </li>
+                        <li>预览项目:<a target="_blank" href="https://jasonshuyue.github.io/nav-demo/index.html">点击这里</a></li>
+                    </ul>
+                </div>
+
+                <!--Canvas画板-->
                 <div class="project-content">
                     <h3>Canvas画板</h3>
                     <ul>
                         <li>关键词: 原生JavaScript、Canvas、响应式、jQuery</li>
-                        <li>描述: 该项目使用原生JS实现，主要调用 Canvas API，实现了划线、调色、橡皮擦、保存等功能。完全由我独立开发。用 XXX 实现了 XXX 功能，用 XXX 实现了 XXX 功能。</li>
+                        <li>描述: 该项目使用原生JS实现，主要调用 Canvas API，实现了划线、调色、橡皮擦、保存等功能。用 XXX 实现了 XXX 功能，用 XXX 实现了 XXX 功能。</li>
                         <li>预览项目:<a target="_blank" href="https://jasonshuyue.github.io/canvas-demo/index.html">点击这里</a></li>
 
                     </ul>
                 </div>
+
+                <!--画一个卡通人物-->
+                <div class="project-content">
+                    <h3>画一个卡通人物</h3>
+                    <ul>
+                        <li>关键词: 原生JavaScript、CSS3</li>
+                        <li>描述: 用动画模拟皮卡丘CSS绘制过程,动画效果原理是通过js定时网页书写CSS字符串+CSS3过渡效果实现,弯曲线条主要是用CSS3圆角精确控制实现.</li>
+                        <li>预览项目:<a target="_blank" href="https://jasonshuyue.github.io/Doreamon-MVC/">点击这里</a></li>
+                    </ul>
+                </div>
+
+                <!--仿网易云音乐-->
+                <div class="project-content">
+                    <h3>仿网易云音乐</h3>
+                    <ul>
+                        <li>关键词: 原生JavaScript、CSS3，MVC模式，eventHub，Jquery</li>
+                        <li>描述: 用动画模拟皮卡丘CSS绘制过程,动画效果原理是通过js定时网页书写CSS字符串+CSS3过渡效果实现,弯曲线条主要是用CSS3圆角精确控制实现.</li>
+                        <li>预览项目:<a target="_blank" href="https://jasonshuyue.github.io/Doreamon-MVC/">点击这里</a></li>
+                    </ul>
+                </div>
+
+
+            </section>
+
+            <!--个人技术专栏-->
+            <section class="personal-page">
+                <h2 class="title">个人技术专栏</h2>
+                <ul class="page-wrapper">
+                    <li class="page-item blog">
+                        <p class="page-item-title">个人博客<a target="_blank" href="https://www.jianshu.com/u/a210faa26a9b">(链接)</a></p>
+                        <img src="./img/blog-qrcode.png" alt="blog">
+                    </li>
+                    <li class="page-item github">
+                        <p class="page-item-title">Github<a target="_blank" href="https://github.com/JasonShuYue">(链接)</a></p>
+                        <img src="./img/github-qrcode.png" alt="github">
+                    s</li>
+                </ul>
             </section>
         </main>
     </div>

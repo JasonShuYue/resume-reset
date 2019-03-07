@@ -118,7 +118,7 @@ $black: #3c3c3c;
   main {
     flex: 1;
     max-width: calc(100% - 240px);
-    padding: 0 20px;
+    padding: 0 30px 0 20px;
     section {
       margin-top: 30px;
       padding-bottom: 20px;
@@ -137,6 +137,7 @@ $black: #3c3c3c;
           list-style: disc;
           padding: 10px 0 0 40px;
           color: #666;
+          text-align: justify;
         }
       }
 
@@ -145,7 +146,45 @@ $black: #3c3c3c;
           color: black;
         }
       }
+    }
+    .professional-skills {
+      .skills-content {
+        .skills-level-1 {
+          list-style: unset;
+          padding-left: 20px;
+          .items-1 {
+            padding: 10px 0;
+            h3 {
+              font-size: 16px;
+            }
+            .skills-level-2 {
+              list-style: circle;
+              padding-left: 20px;
+              .items-2 {
+                padding: 5px 0;
+              }
+            }
+          }
+        }
 
+      }
+    }
+
+    .personal-page {
+      .page-wrapper {
+        list-style: unset;
+        padding-left: 20px;
+        .page-item {
+          font-size: 16px;
+          padding-bottom: 10px;
+          .page-item-title {
+            padding-bottom: 10px;
+          }
+          img {
+            width: 100px;
+          }
+        }
+      }
     }
   }
 
