@@ -35,6 +35,8 @@ $black: #3c3c3c;
     padding: 150px 20px 0 20px;
     min-height: calc(100vh - 120px);
     position: relative;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     .avator {
       width: 200px;
       position: absolute;
@@ -124,6 +126,7 @@ $black: #3c3c3c;
     flex: 1;
     max-width: calc(100% - 240px);
     padding: 0 30px 0 20px;
+    border-bottom: 1px solid #ccc;
     section {
       margin-top: 30px;
       padding-bottom: 20px;
@@ -158,9 +161,6 @@ $black: #3c3c3c;
           }
         }
       }
-      .internship-part {
-
-      }
     }
     .internship {
       .productions-wrapper {
@@ -168,6 +168,46 @@ $black: #3c3c3c;
         justify-content: space-around;
         .productions {
           width: 40%;
+        }
+      }
+      border: none;
+    }
+
+  }
+
+  .second-part {
+    section {
+      margin-top: 30px;
+      padding: 0 100px 20px 100px;
+      border-bottom: 1px solid #ccc;
+      .title {
+        color: #5c99ca;
+        font-size: 16px;
+        margin: 12px 0;
+      }
+      .contentOne, .contentTwo, .project-content, .internship-part {
+        margin-bottom: 20px;
+        h3 {
+          font-size: 16px;
+        }
+        ul {
+          list-style: disc;
+          padding: 10px 0 0 40px;
+          color: #666;
+          text-align: justify;
+        }
+      }
+      .project-content {
+        a:active, a:visited {
+          color: black;
+        }
+        .productions {
+          width: 90%;
+          display: block;
+          margin-top: 5px;
+          &.cloud-production{
+            width: 300px;
+          }
         }
       }
     }
@@ -348,18 +388,58 @@ $black: #3c3c3c;
             }
           }
         }
+        &.internship {
+          .productions-wrapper {
+            .productions {
+              width: auto;
+              height: 280px;
+            }
+          }
+        }
+      }
+    }
+    .second-part {
+      .project {
         .project-content {
+          .preview {
+            display: none;
+          }
+          .productions {
+            margin-top: 20px;
+          }
+          .key-board {
+            width: auto;
+            height: 120px;
+          }
           .canvas-production {
-            margin-top: 50px;
+            width: auto;
+            height: 100px;
           }
           .todolist-production {
-            margin-bottom: 100px;
+            width: 90%;
+            height: 200px;
           }
-          .cloud-qrcode {
-            display: inline-block;
+          .tickets-project {
+            width: auto;
+            height: 300px;
           }
           .cloud-production {
-            display: inline-block;
+            //display: inline-block;
+            width: auto;
+            height: 500px;
+          }
+          &:nth-last-of-type(1) {
+            //page-break-after:right;
+          }
+        }
+      }
+      .professional-skills {
+        .skills-level-1 {
+          .items-1 {
+            padding: 0;
+            &:nth-last-of-type(1) {
+              margin-bottom: 70px;
+            }
           }
         }
       }
