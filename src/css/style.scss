@@ -133,7 +133,7 @@ $black: #3c3c3c;
         font-size: 16px;
         margin: 12px 0;
       }
-      .contentOne, .contentTwo, .project-content {
+      .contentOne, .contentTwo, .project-content, .internship-part {
         margin-bottom: 20px;
         h3 {
           font-size: 16px;
@@ -145,7 +145,6 @@ $black: #3c3c3c;
           text-align: justify;
         }
       }
-
       .project-content {
         a:active, a:visited {
           color: black;
@@ -157,6 +156,18 @@ $black: #3c3c3c;
           &.cloud-production{
             width: 300px;
           }
+        }
+      }
+      .internship-part {
+
+      }
+    }
+    .internship {
+      .productions-wrapper {
+        display: flex;
+        justify-content: space-around;
+        .productions {
+          width: 40%;
         }
       }
     }
